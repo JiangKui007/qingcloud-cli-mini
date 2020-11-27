@@ -1,7 +1,7 @@
 # _*_ coding:utf-8 _*_
 # __author__ = 'Edison'
 import unittest
-import mock
+from unittest import mock
 
 from cli.instance_op import run, base
 from cli.instance_op.run import RunInstancesAction

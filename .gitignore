@@ -1,4 +1,8 @@
 *.cfg
 *.csv
+*.txt
 __pycache__/
 .idea/
+.cache/
+.pytest_cache/
+

@@ -10,7 +10,7 @@ import urllib.parse as urllib
 
 import requests
 import json
-from read_configuration import config_dict, signature_method, base_url, zone
+from configuration import config_dict, signature_method, base_url, zone
 
 
 def explode_array(list_str, separator=","):

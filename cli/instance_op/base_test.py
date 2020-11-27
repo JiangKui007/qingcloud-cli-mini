@@ -2,11 +2,11 @@
 # __author__ = 'Edison'
 import argparse
 import unittest
-import mock
+from unittest import mock
 import sys
 
 from cli.instance_op import base
-from read_configuration import load_access_conf
+from configuration import load_access_conf
 from argparse import ArgumentParser
 
 
@@ -17,13 +17,13 @@ class BaseActionTest(unittest.TestCase):
 
         :return:
         """
-        ba = base.BaseAction
         add_common_arguments, add_ext_arguments = mock.Mock(), mock.Mock()
-        ba.add_common_arguments = add_common_arguments
-        ba.add_ext_arguments = add_ext_arguments
-        self.assertTrue(type(ba.get_argument_parser()), type(ArgumentParser))
+        base.BaseAction.add_common_arguments = add_common_arguments
+        base.BaseAction.add_ext_arguments = add_ext_arguments
+        parser = base.BaseAction.get_argument_parser()
         self.assertEqual(add_common_arguments.call_count, 1)
         self.assertEqual(add_ext_arguments.call_count, 1)
+        self.assertEqual(type(parser), ArgumentParser)
 
     def test_add_common_arguments(self):
         """

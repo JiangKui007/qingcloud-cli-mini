@@ -3,8 +3,7 @@
 import sys
 import unittest
 from unittest import mock
-
-from mock import call
+from unittest.mock import call
 
 from cli import driver
 
