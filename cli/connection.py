@@ -1,15 +1,13 @@
 # _*_ coding:utf-8 _*_
 # __author__ = 'Edison'
-import sys
 import hmac
 import base64
 import datetime
-from hashlib import sha1, sha256
-
 import urllib.parse as urllib
-
 import requests
 import json
+from hashlib import sha1, sha256
+
 from configuration import config_dict, signature_method, base_url, zone
 
 
