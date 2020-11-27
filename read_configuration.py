@@ -10,7 +10,7 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 
-def load_access_conf(conf="/Users/MRJ/PycharmProjects/qingcloud-test/access_key_qingyun.csv"):
+def load_access_conf(conf="/Users/MRJ/PycharmProjects/qingcloud-cli-mini/access_key_qingyun.csv"):
     """
     读取配置文件
     :param file_name:
