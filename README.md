@@ -16,7 +16,7 @@
 
 将下载好的`access_keys`在系统中的绝对路径传递给`load_access_conf`函数。
 
-配置程序默认的地区zone，这里是sh1a. 参见：[地区-机型列表](https://docs.qingcloud.com/product/api/common/includes/instance_type.html#instance-type)
+配置程序默认的地区`zone`，这里是`sh1a`. 参见：[地区-机型列表](https://docs.qingcloud.com/product/api/common/includes/instance_type.html#instance-type)
 
 完成配置。
 
