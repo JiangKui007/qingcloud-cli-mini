@@ -10,6 +10,7 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 
+
 def load_access_conf(conf="/Users/MRJ/PycharmProjects/qingcloud-cli-mini/access_key_qingyun.csv"):
     """
     读取配置文件
@@ -25,6 +26,7 @@ def load_access_conf(conf="/Users/MRJ/PycharmProjects/qingcloud-cli-mini/access_
     return config_dict
 
 
+# 传入绝对路径
 config_dict = load_access_conf()
 qy_access_key_id = config_dict['qy_access_key_id']
 qy_secret_access_key = config_dict['qy_secret_access_key']
